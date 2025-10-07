@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14pt;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+select {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background-color: #ddd;
+  color: black;
+  font-weight: 400;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px 16px;
+}
+
+.error {
+  color: red;
+}

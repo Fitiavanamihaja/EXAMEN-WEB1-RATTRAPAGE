@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses List</title>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="expense-form">
+        <h2>Créer une dépense</h2>
+        <form class="form" id="form">
+          <p id="error" class="error"></p>
+
+          <input
+            type="text"
+            id="name"
+            required
+            p
+    if (categorieCell.textContlaceholder="Nom de la dépense"
+          />
+          <input
+            type="number"
+            id="amount"
+            required
+            placeholder="Montant de la dépense (en Ariary)"
+          />
+          <select name="categories" id="categories" required>
+            <option value="Nourriture">Nourriture</option>
+            <option value="Transport">Transport</option>
+            <option value="Matériel">Matériel</option>
+          </select>
+
+          <div class="form-buttons">
+            <button type="submit" id="validate-btn" class="validate-btn">
+              Valider
+            </button>
+            <button type="reset" class="reset-btn">Annuler</button>
+          </div>
+
+          <button type="button" id="color-btn">
+            Colorer les dépenses en nourriture
+          </button>
+        </form>
+      </div>
+
+      <div class="expenses-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Nom de la dépense</th>
+              <th>Montant (Ariary)</th>
+              <th>Catégorie</th>
+            </tr>
+          </thead>
+          <tbody class="table-content" id="table-content"></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
